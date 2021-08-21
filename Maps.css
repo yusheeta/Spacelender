@@ -1,0 +1,25 @@
+.maps-prod-img {
+    height: 37vmin;
+}
+
+.maps-text-height {
+    height: 37vmin;
+}
+
+.maps-prod-text {
+    height: 36vmin;
+}
+
+.maps-text-width {
+    width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+    .maps-prod-text {
+        height: 28vmin;
+    }
+
+    .maps-text-height {
+        height: calc(30vmin + 30px);
+    }
+}

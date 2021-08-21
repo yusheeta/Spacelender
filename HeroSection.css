@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+.hero-container {
+    width: 100%;
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+    animation: heroBG 9s infinite;
+}
+
+.text1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    padding: 20px;
+    padding-left: 0px;
+    margin-left: 35px;
+    margin-bottom: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-top: 12rem;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    /* height: 110vh; */
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 100vw; */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+    /* height:100%;
+  width:100%; */
+}
+
+.item {
+    margin-top: 306px;
+    margin-left: 35px;
+    opacity: 1;
+}
+
+.top-text {
+    opacity: 0.4196078431372549;
+    color: #050505;
+    font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    padding-bottom: 0px;
+    background-color: white;
+}
+
+.bottom-text {
+    opacity: 1;
+    color: #050505;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.01rem;
+    padding: 0 10px 7px;
+}
+
+.hero-input {
+    opacity: 1;
+    width: auto;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.hero-input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.section {
+    display: flex;
+    gap: 0;
+    margin-left: 35px;
+    width: 50vw;
+    /* height: 65px; */
+    text-align: left;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: white;
+}
+
+@media screen and (min-width: 830px) {
+    .section {
+        flex-direction: row;
+        width: 54vw;
+        /* height: 0;    */
+    }
+    .bottom-text {
+        font-size: 10;
+    }
+    .top-text {
+        font-size: 10;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .section {
+        width: 94vw;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .section {
+        background-color: transparent;
+        height: 50px;
+    }
+    .hero-image {
+        height: 60vh;
+    }
+    .bottom-text {
+        font-size: 15px;
+    }
+    .top-text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-height: 830px) {
+    .parent {
+        margin-top: 100px;
+    }
+}
+
+.segment {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 60vw;
+    height: 65px;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.verticalLine {
+    border-left: 2px solid #050505;
+    opacity: 0.4196078431372549;
+    line-height: 65px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+input::placeholder {
+    color: #050505;
+    opacity: 1;
+    font-size: 30;
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.search-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 45px;
+    height: 65px !important;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-right: 18px;
+    /*15px */
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .search-icon {
+        flex-direction: row;
+        height: 65px;
+        padding: 0;
+    }
+}
+
+.divider {
+    border-left: 2px solid white;
+    opacity: 0.4196078431372549;
+    line-height: 65px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+#magnify {
+    border-radius: 5px;
+    padding: 22px;
+    /*16px*/
+    background-color: #47143D;
+    color: #FFF;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: unset !important;
+}
+
+svg {
+    border-radius: 10px;
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+}
+
+.enter {
+    opacity: 0;
+}
+
+.enter-active {
+    opacity: 0.5;
+    transition: opacity 300ms;
+}
+
+@keyframes heroBG {
+    0%,
+    to {
+        background-image: url("./img/front.jpg");
+    }
+    20% {
+        background-image: url("./img/beavh.jpg");
+    }
+    33% {
+        background-image: url("./img/wedding.jpg");
+    }
+    53% {
+        background-image: url("./img/front.jpg");
+    }
+    66% {
+        background-image: url("./img/beavh.jpg");
+    }
+    86% {
+        background-image: url("./img/wedding.jpg");
+    }
+}
+
+
+/* THIS CSS IS FOR MODALS */
+
+.border-color-focus:focus {
+    border-color: #47143D !important;
+    border-width: 1.5px !important;
+    border-style: solid;
+}
+
+.border-color-focus:focus-within {
+    border-color: #47143D !important;
+    border-width: 1.5px !important;
+    border-style: solid;
+}
+
+.label-floating input:not(:placeholder-shown) {
+    padding-top: 0.5rem;
+    /* padding-bottom: 0.5rem; */
+}
+
+.label-floating input:not(:placeholder-shown)~label {
+    font-size: 0.6rem;
+    transition: all 0.2s ease-in-out;
+}
